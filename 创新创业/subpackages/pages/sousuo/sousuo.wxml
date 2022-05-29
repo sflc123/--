@@ -1,0 +1,31 @@
+<view style="height:32px;width:100%;background-color: #ccffff;border:#ccffff">
+<view style="border:1px solid #ccffff; border-radius:18px;display: flex;flex-direction: row;background-color: rgb(250, 255, 255);">
+    <view class="search" hover-class="none" hover-stop-propagation="false">
+    <input  type="text" maxlength='100' placeholder="景点景区" value="{{inputval}}" focus="{{inputshowed}}" bindinput="inputtyping" />
+    <button  wx:if="{{inputval.length>0}}" bindtap="clearinput" style="height:20px;width: 20px;border:0;display: flex;align-items: center;" plain="true">
+        <icon type="clear" size="14"></icon>
+    </button>
+    </view>
+    <button style="height:30px;width:40px;border:none;display: flex;flex-direction: row;align-items: center;"plain="true" bindtap="search">
+        <icon style="margin:-2px -5px;" type="search" size="23"></icon>
+    </button>
+</view>
+</view>
+<view class="" wx:if="{{inputshowed==false}}">
+<view wx:if="{{searchlist.length>0}}">
+<view class="searchLS">
+    <text>历史记录</text>  
+    <button plain="true" style="display:flex;align-items: center;left: 38%;height:20px;border:0;width:50px" bindtap="clear">
+        <image class="" src="/images/shanchu.png" style="height:20px;width:20px;margin: 0 0 0 0;"></image>
+    </button>
+</view>  
+    <view wx:for="{{searchlist}}" wx:key="index" wx:if="{{item!='0'}}" bindtap="lishishuru" data-id="{{item}}">
+    <button>{{item}}</button>
+    </view>
+</view> 
+</view>
+<view class="" wx:elif="{{inputshowed==true}}">
+    <view class="" wx:key="index"wx:for="{{catlist}}">
+        <button bindtap="goToScenicspot" data-id="{{item.id}}">{{item.name}}</button>
+    </view> 
+</view>

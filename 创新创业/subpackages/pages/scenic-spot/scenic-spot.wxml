@@ -1,0 +1,47 @@
+<view class="container">
+  <!-- 主页面组件 -->
+  <text>{{list[id].name}}</text>
+  <!-- 标题名字 -->
+  <swiper class="" style="width:100%;height:100vh" interval="50000000000000">
+    <!-- 主要翻页组件 -->
+  <swiper-item class="" >
+    <!-- 大的翻页组件 -->
+    <view class="">
+      <!-- 初始页面数据，及大的景点名，和介绍 -->
+      <swiper class="" indicator-dots="false"autoplay="true"style="width:100%;">
+      <block wx:for="{{list[id].image}}">
+        <swiper-item class="" item-id="">
+          <image class=""style="width:100%" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+      </swiper>
+    </view>
+    <!-- <view>{{list[id].text}}</view> -->
+    <scroll-view class="" style="height:77.6%;" scroll-y="true" >
+      <text>{{list[id].text}}</text>
+    </scroll-view>
+    <!-- 文本介绍 -->
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <view class="" hover-class="none" hover-stop-propagation="false">
+      <swiper class="" style="width:100%;height:110vh" interval="5000000000000" duration="1000" circular="false" vertical="false" >
+        <block wx:for="{{list[id].child}}" >
+          <swiper-item class="" item-id="">
+            <text>{{item.name}}</text>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+              <swiper class=""  interval="5000" duration="1000" >
+                <block wx:for="{{item.image}}" wx:for-item="image">
+                  <swiper-item class="" item-id="">
+                    <image src="{{image}}"style="width:100%"></image>
+                  </swiper-item>
+                </block>
+              </swiper>
+            </view>
+            <view >{{item.text}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </swiper-item>
+  </swiper>
+</view>

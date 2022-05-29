@@ -1,0 +1,14 @@
+/* .container {
+  组件元素
+  height: 270px;
+  padding-top: 0px;
+}
+.vol-swiper-item {
+  height: 100%;
+}
+
+.image {
+  组件内的图片元素
+  width: 100%;
+  height: 100%;
+} */

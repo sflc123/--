@@ -1,0 +1,20 @@
+<view  hover-class="none" hover-stop-propagation="false">
+  <button class="search" bindtap="gotosearch" plain="true" style="border:none">
+    <icon size="23" type="search" ></icon>
+  </button>
+  </view>
+<scroll-view class="container" scroll-x="true" scroll-y="true">
+  <image class="image" src="/images/huananxiu.jpg" ></image>
+    
+  <!-- <view wx:for="{{list}}" wx:key="id" wx:for-item="id" wx:for-index="name">
+    <button class="{{name==0?'':'wuys'}}" bindtap="goToScenicspot" plain="true" style="width:7px" data-id="{{name}}" >{{id.name}}</button>
+  </view>
+  <text class="" selectable="false" space="false" decode="false" style="height:600px">
+  </text>
+  <view wx:for="{{list}}" wx:key="id" wx:for-item="id" wx:for-index="name">
+    <button class="{{name==0?'':'wuys'}}" bindtap="goToScenicspot" plain="true"  data-id="{{name}}" >{{id.name}}</button>
+  </view>
+  <view wx:for="{{list}}" wx:key="id" wx:for-item="id" wx:for-index="name">
+    
+  </view> -->
+</scroll-view>

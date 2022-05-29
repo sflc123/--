@@ -1,0 +1,33 @@
+<swiper class="" style="position: relative; height: 96vh" indicator-color="rgba(0,0,0,.3)" current="0"
+  current-item-id="" interval="500000000000000000" duration="1000">
+  <swiper-item class="" item-id="">
+    <view style="display: flex; flex-direction: row; width: 50%" hover-class="none" hover-stop-propagation="false">
+      <text style="width: 50%">民间文学</text>
+      <button class="search" bindtap="gotosearch" plain="true" style="border: none">
+        <icon size="23" type="search"></icon>
+      </button>
+    </view>
+    <scroll-view class="" style="height: 100%" scroll-x="true" scroll-y="true">
+      <block wx:for="{{ list1 }}">
+        <button bindtap="gotoscenic" item-id="{{ item.id }}">
+          {{ item.name }}
+        </button>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <view style="display: flex; flex-direction: row; width: 50%" hover-class="none" hover-stop-propagation="false">
+      <text style="width: 50%">传统音乐</text>
+      <button class="search" bindtap="gotosearch" plain="true" style="border: none">
+        <icon size="23" type="search"></icon>
+      </button>
+    </view>
+    <scroll-view class="" style="height: 100%" scroll-x="true" scroll-y="true">
+      <block wx:for="{{ list2 }}">
+        <button bindtap="gotoscenic" item-id="{{ item.id }}">
+          {{ item.name }}
+        </button>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>

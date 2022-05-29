@@ -1,0 +1,35 @@
+.wuys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: oblique;
+  height: 100px;
+  width: 20px;
+  font-size: 12px;
+  background-color: red;
+}
+
+.search {
+  width: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  left: 91.5%;
+  position: absolute;
+  z-index: 999;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140vh;
+  height: 140vh;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}

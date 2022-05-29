@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:30px;
+    /* border:1px solid rgb(218, 213, 213); */
+    margin: 0 0 0 5px;
+    width: 90%;
+}
+input{
+    width:100%
+}
+
+.searchLS{
+    height:10vh;
+    display:flex;
+    flex-direction: row;
+    height:20px;background-color:beige;
+}

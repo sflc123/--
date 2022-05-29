@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/wenhua/wenhua",
+        "pages/fengjing/fengjing"
+    ],
+        "subpackages": [
+            {
+                "root": "subpackages",
+                "name": "subpackages",
+                "pages": [
+                    "pages/scenic-spot/scenic-spot",
+                    "pages/sousuo/sousuo"
+                ]
+            }
+        ],
+            "window": {
+        "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#ccffff",
+                "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#aaaaa",
+            "selectedColor": "#acabbd",
+                "backgroundColor": "#aaffcc",
+                    "position": "bottom",
+                        "borderStyle": "black",
+                            "list": [
+                                {
+
+                                    "pagePath": "pages/index/index",
+                                    "text": "首 页",
+                                    "iconPath": "/images/主页，基本信息.png",
+                                    "selectedIconPath": "/images/主页.png"
+                                },
+                                {
+                                    "pagePath": "pages/wenhua/wenhua",
+                                    "text": "非 遗",
+                                    "iconPath": "/images/民俗文化.png",
+                                    "selectedIconPath": "/images/文化生活.png"
+                                },
+                                {
+                                    "pagePath": "pages/fengjing/fengjing",
+                                    "iconPath": "/images/旅行景区.png",
+                                    "selectedIconPath": "/images/景区.png",
+                                    "text": "风 景"
+
+                                }
+                            ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

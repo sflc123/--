@@ -1,0 +1,23 @@
+<view class="search0" hover-class="none" hover-stop-propagation="false">
+    <button class="search" bindtap="gotosearch" plain="true" style="border:none">
+      <icon size="23" type="search" >
+      </icon>
+    </button>
+  </view>
+  <swiper class="" style="position:relative;height:96vh" indicator-color="rgba(0,0,0,.3)" 
+  current="0" current-item-id="" interval="500000000000000000" duration="1000" >
+  <swiper-item class="" item-id="">
+    <scroll-view class="" style="height:100%;"scroll-x="true" scroll-y="true" >
+      <block wx:for="{{list}}">
+        <button>{{item.name}}</button>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <scroll-view class="" style="height:100%;"scroll-x="true" scroll-y="true" >
+      <block wx:for="{{list}}">
+        <button>{{item.name}}</button>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>
